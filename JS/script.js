@@ -10,19 +10,22 @@ for ( let index = 0 ; index < 31 ; index = index + 1){
     if  (index % 3 === 0 && index % 5 === 0) {
         console.log("fizzbuzz");
         result = ("fizzbuzz");
-        li.classList.add("green");
+        colour = "green";
     } else if (index % 5 === 0){
         console.log("buzz");
         result = ("buzz");
-        li.classList.add("blue");
+        colour = "blue";
     } else if (index % 3 === 0){
         console.log("fizz");
         result = ("fizz");
-        li.classList.add("yellow");
+        colour = "yellow";
     } else {
         console.log(index);
         result = index;
+        colour = "black"
     }
+
+    li.classList.add(colour)
 
     li.append("You got a " + result);
 
