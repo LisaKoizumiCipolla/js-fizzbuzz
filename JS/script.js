@@ -1,16 +1,23 @@
 
+// add element in html
 const ulElement = document.querySelector("ul");
 
+// inizialise variables
 let result;
 
 let message;
 
 let colour;
 
+let li;
+
+// start circle
 for ( let index = 0 ; index < 31 ; index = index + 1){
     
-    let li = document.createElement("li");
+    // create li in html
+    li = document.createElement("li");
 
+    // assign different values for different case
     if  (index % 3 === 0 && index % 5 === 0) {
         message = ("fizzbuzz");
         result = ("fizzbuzz");
@@ -29,12 +36,15 @@ for ( let index = 0 ; index < 31 ; index = index + 1){
         colour = "black"
     }
 
+    // check results on console
     console.log(message);
 
-    li.classList.add(colour)
-
+    // assign content to li
     li.append("You got a " + result);
 
+    li.classList.add(colour);
+
+    // integrate li
     ulElement.appendChild(li);
     
 }
