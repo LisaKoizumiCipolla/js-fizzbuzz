@@ -3,9 +3,9 @@ const ulElement = document.querySelector("ul");
 
 let result;
 
-let li = document.createElement("li");
-
 for ( let index = 0 ; index < 31 ; index = index + 1){
+    
+    let li = document.createElement("li");
 
     if  (index % 3 === 0 && index % 5 === 0) {
         console.log("fizzbuzz");
@@ -23,9 +23,9 @@ for ( let index = 0 ; index < 31 ; index = index + 1){
         console.log(index);
         result = index;
     }
-    
 
     li.append("You got a " + result);
 
     ulElement.appendChild(li);
+    
 }
