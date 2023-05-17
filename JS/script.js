@@ -12,7 +12,7 @@ let colour;
 let li;
 
 // start circle
-for ( let index = 0 ; index < 31 ; index = index + 1){
+for ( let index = 1 ; index < 101 ; index = index + 1){
     
     // create li in html
     li = document.createElement("li");
